@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/User/Desktop/Robot_program/matplotplusplus/source/3rd_party/nodesoup/include",
+                "C:/Users/User/Downloads/eigen-3.4.0/Eigen",
+                "C:/msys64/mingw64/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt",  // Путь к UCRT
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared", // Путь к Shared
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um",    // Путь к UM
+                "C:/msys64/mingw64/include"
+            ],
+            "defines": [
+                "_DEBUG",
+
+
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe", 
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
