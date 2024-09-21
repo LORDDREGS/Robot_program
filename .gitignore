@@ -3,7 +3,10 @@
 .cache
 
 # Build
-build*
+build
+build_*
+Build
+Build_*
 
 # Data
 data
