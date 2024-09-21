@@ -1,0 +1,7 @@
+BasedOnStyle: Microsoft
+#DerivePointerAlignment: false
+IncludeBlocks: Preserve
+
+#IndentWidth: 4
+#AccessModifierOffset: 0
+#IndentAccessModifiers: true
