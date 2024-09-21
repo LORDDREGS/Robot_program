@@ -1,3 +1,0 @@
-/home/rayesus/workshop/Robot_program/build/CMakeFiles/Robot_program.dir
-/home/rayesus/workshop/Robot_program/build/CMakeFiles/edit_cache.dir
-/home/rayesus/workshop/Robot_program/build/CMakeFiles/rebuild_cache.dir
