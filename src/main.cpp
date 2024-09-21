@@ -1,11 +1,13 @@
-#include "KalmanFilter.hpp"
 #include "Dijkstra.hpp"
+#include "KalmanFilter.hpp"
 #include <iostream>
 #include <matplotlibcpp.h>
 
 namespace matplot = matplotlibcpp;
 
-int main() {
+int main()
+{
+    auto *ptr = new int();
     // Пример использования расширенного фильтра Калмана
     KalmanFilter kf;
     Eigen::VectorXd initial_state(4);
@@ -20,8 +22,7 @@ int main() {
     Eigen::VectorXd z(2);
     z << 1, 1;
     Eigen::MatrixXd H(2, 4);
-    H << 1, 0, 0, 0,
-         0, 1, 0, 0;
+    H << 1, 0, 0, 0, 0, 1, 0, 0;
     Eigen::MatrixXd R = Eigen::MatrixXd::Identity(2, 2) * 0.1;
 
     kf.update(z, H, R);
@@ -50,7 +51,8 @@ int main() {
 
     auto path = dijkstra.shortestPath(0, 4);
     std::cout << "Shortest path from 0 to 4: ";
-    for (int node : path) {
+    for (int node : path)
+    {
         std::cout << node << " ";
     }
     std::cout << std::endl;

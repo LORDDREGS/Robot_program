@@ -3,13 +3,14 @@
 
 #include <vector>
 
-class Graph {
-public:
+class Graph
+{
+  public:
     Graph(int vertices);
     void addEdge(int u, int v, double weight);
-    const std::vector<std::pair<int, double>>& getAdjList(int u) const;
+    const std::vector<std::pair<int, double>> &getAdjList(int u) const;
 
-private:
+  private:
     int vertices_;
     std::vector<std::vector<std::pair<int, double>>> adj_list_;
 };
