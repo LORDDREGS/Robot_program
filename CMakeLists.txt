@@ -4,14 +4,12 @@ project(Robot_program)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED On)
 
-add_executable(Robot_program
-    src/main.cpp
-    src/KalmanFilter.cpp
-    src/Dijkstra.cpp
-    src/StateModel.cpp
-    src/MeasurementModel.cpp
-    src/Graph.cpp
+file(GLOB_RECURSE SOURCES
+    ${CMAKE_SOURCE_DIR}/src/*.cpp
 )
+
+add_executable(Robot_program)
+target_sources(Robot_program PRIVATE ${SOURCES})
 
 # Подключение библиотеки Eigen
 find_package(Eigen3 REQUIRED)
