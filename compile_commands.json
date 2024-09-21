@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/main.cpp.o -c /home/rayesus/workshop/Robot_program/src/main.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/main.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/KalmanFilter.cpp.o -c /home/rayesus/workshop/Robot_program/src/KalmanFilter.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/KalmanFilter.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/KalmanFilter.cpp.o"
+},
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/Dijkstra.cpp.o -c /home/rayesus/workshop/Robot_program/src/Dijkstra.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/Dijkstra.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/Dijkstra.cpp.o"
+},
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/StateModel.cpp.o -c /home/rayesus/workshop/Robot_program/src/StateModel.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/StateModel.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/StateModel.cpp.o"
+},
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/MeasurementModel.cpp.o -c /home/rayesus/workshop/Robot_program/src/MeasurementModel.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/MeasurementModel.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/MeasurementModel.cpp.o"
+},
+{
+  "directory": "/home/rayesus/workshop/Robot_program/build",
+  "command": "/usr/bin/g++ -I/home/rayesus/workshop/Robot_program/include -isystem /usr/include/eigen3 -isystem /usr/include/python3.12 -isystem /usr/lib/python3.12/site-packages/numpy/_core/include -g -o CMakeFiles/Robot_program.dir/src/Graph.cpp.o -c /home/rayesus/workshop/Robot_program/src/Graph.cpp",
+  "file": "/home/rayesus/workshop/Robot_program/src/Graph.cpp",
+  "output": "CMakeFiles/Robot_program.dir/src/Graph.cpp.o"
+}
+]

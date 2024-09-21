@@ -15,7 +15,7 @@ void KalmanFilter::predict(const Eigen::MatrixXd& F, const Eigen::MatrixXd& Q) {
 void KalmanFilter::update(const Eigen::VectorXd& z, const Eigen::MatrixXd& H, const Eigen::MatrixXd& R) {
     Eigen::VectorXd y = z - H * x_;
     Eigen::MatrixXd S = H * P_ * H.transpose() + R;
-    Eigen::MatrixXd K = P_ * H.transpose() / S;
+    Eigen::MatrixXd K = P_ * H.transpose() /* / S */;
     x_ = x_ + K * y;
     P_ = (Eigen::MatrixXd::Identity(x_.size(), x_.size()) - K * H) * P_;
 }

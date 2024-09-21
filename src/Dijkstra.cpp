@@ -1,5 +1,7 @@
-#include "Dijkstra.hpp"
+#include <algorithm>
 #include <queue>
+
+#include "Dijkstra.hpp"
 
 Dijkstra::Dijkstra(int vertices) : vertices_(vertices) {
     adj_list_.resize(vertices);

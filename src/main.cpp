@@ -1,7 +1,9 @@
 #include "KalmanFilter.hpp"
 #include "Dijkstra.hpp"
 #include <iostream>
-#include <matplot/matplot.h>
+#include <matplotlibcpp.h>
+
+namespace matplot = matplotlibcpp;
 
 int main() {
     // Пример использования расширенного фильтра Калмана
