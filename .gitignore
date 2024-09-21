@@ -8,5 +8,8 @@ build_*
 Build
 Build_*
 
+# clangd
+compile_commands.json
+
 # Data
 data
