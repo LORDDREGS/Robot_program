@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.30)
 project(Robot_program)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -15,18 +15,16 @@ add_executable(Robot_program
 
 # Подключение библиотеки Eigen
 find_package(Eigen3 REQUIRED)
+find_package(matplotlib_cpp REQUIRED)
 
-# Подключение библиотеки Matplot++
-set(MATPLOT_DIR "C:/Users/User/Desktop/Robot_program/matplotplusplus")  # Путь к Matplot++
-add_library(Matplot++ INTERFACE)  # Создаем интерфейсный таргет для Matplot++
-target_include_directories(Matplot++ INTERFACE ${MATPLOT_DIR}/include)
+
 
 # Настройка include directories и линковка библиотек для таргета Robot_program
 target_include_directories(Robot_program PRIVATE
-    ${CMAKE_SOURCE_DIR}/include  # Директория с вашими заголовками
+    ${CMAKE_SOURCE_DIR}/include  
 )
 
 target_link_libraries(Robot_program
-    Eigen3::Eigen  # Линковка с Eigen
-    Matplot++  # Линковка с Matplot++
+    Eigen3::Eigen
+    matplotlib_cpp::matplotlib_cpp
 )

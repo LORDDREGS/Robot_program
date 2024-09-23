@@ -1,7 +1,9 @@
 #include "KalmanFilter.hpp"
 #include "Dijkstra.hpp"
 #include <iostream>
-#include <matplot/matplot.h>
+#include <matplotlibcpp.h>
+
+namespace matplot = matplotlibcpp;
 
 int main() {
     // Пример использования расширенного фильтра Калмана
@@ -19,7 +21,7 @@ int main() {
     z << 1, 1;
     Eigen::MatrixXd H(2, 4);
     H << 1, 0, 0, 0,
-         0, 1, 0, 0;
+        0, 1, 0, 0;
     Eigen::MatrixXd R = Eigen::MatrixXd::Identity(2, 2) * 0.1;
 
     kf.update(z, H, R);

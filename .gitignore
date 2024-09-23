@@ -1,0 +1,8 @@
+.cache
+
+# Build
+
+build*
+
+# Data
+data
